@@ -23,7 +23,6 @@ RUN meson setup build --buildtype=release \
     -Dtest=false -Dlc-compliance=disabled \
     -Dcam=disabled -Dqcam=disabled \
     -Ddocumentation=disabled -Dpycamera=enabled \
-    -Dpycamera=enabled \
     -Ddatadir=/app/libcamera/data -Dlibdir=/app/libcamera/lib \
     -Dlibexecdir=/app/libcamera/libexce
 RUN ninja -C build install
